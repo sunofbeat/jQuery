@@ -1,0 +1,18 @@
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script>
+    $(() => {
+        console.log($('a').attr('href'))//attr은 0번째 element를 리턴
+
+        $('a').attr('href', 'https://www.daum.net/') //모든<a>링크를 daum으로 바꾼다
+
+        $('a').attr({
+            href: 'https://jquery.com',
+            target: '_blank' //빈창 새창에 링크가뜸
+        })
+
+        $('a').removeAttr('target') //target을 제거하면 현재창에서 페이지이동됨
+    })
+</script>
+
+<a href='https://www.google.co.kr/'>google</a>
+<a href='https://www.naver.com/'>naver</a>
