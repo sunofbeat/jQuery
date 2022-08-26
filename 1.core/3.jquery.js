@@ -26,26 +26,27 @@ $('a.external: first') //첫번째 class
 
  $('tr:odd')
  /** 홀수번째
-  * <tr/> --
-  * <tr/>
-  * <tr/>--
+  * <tr/>0
+  * <tr/>1 --
+  * <tr/>2
+  * <tr/>3--
   */
 
  $('div:visible')
 
- $('div:gt(1)') //1번째 인덱스보다 큰거부터(0, 1, 2)
+ $('div:gt(1)') //1번째 인덱스를 초과하는 값부터(0, 1, 2)
  /**
-  * <div></div>
-  * <div></div>
-  * <div></div> --
+  * <div></div>0
+  * <div></div>1
+  * <div></div>2 --
   */
 
  $('div:animated')
 
- $('a[rel$="thinger"]')
+ $('a[rel$="thinger"]') //thinger로 끝나는것들
  /**
-  * <a href='do-nothing'></a>
-  * <a href='so-thing'></a>
+  * <a href='do-nothinger'></a>
+  * <a href='so-thinger'></a>
   */
 
  $('div.foo').has('p') 

@@ -1,0 +1,19 @@
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script>
+$(() => {
+    console.log($('.1').children()) //2-1, 2-2, 2-3 직계 자식까지만 찾아줌
+    console.log($('.1').find('div'))//class 1 미만의 모든 자식 리턴
+})
+</script>
+
+<pre>
+    <div class='1'>
+        <div class='2-1'>
+            <div class='3'>
+                <div class='4'></div>
+            </div>
+        </div>
+        <div class='2-2'></div>
+        <div class='2-3'></div>
+    </div>
+</pre>

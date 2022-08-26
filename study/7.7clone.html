@@ -1,8 +1,8 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
-    $(() => {
-        $('div').insertAfter('hr') //div를 hr다음으로 배치시킨다
-    })
+$(() => {
+    $('div').clone().appendTo('hr')
+})
 </script>
 
 <style>

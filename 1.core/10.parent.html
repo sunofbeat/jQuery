@@ -1,0 +1,26 @@
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script>
+$(() => {
+    console.log($('.4').parent())//parent class4의 부모를 찾아준다
+
+    console.log($('.4').parents()) //부모들을 전부 찾아줌
+
+    console.log($('.4').parents('div')) //부모중에 div를 찾아줌
+
+    console.log($('.4').parentsUntil('div.1')) //div.1미만으로 찾아라
+
+    console.log($('.4').closest('div')) //나 이상의 div를 찾아라 [div.4]
+})
+</script>
+
+<pre>
+    <div class='1'>
+        <div class='2-1'>
+            <div class='3'>
+                <div class='4'></div>
+            </div>
+        </div>
+        <div class='2-2'></div>
+        <div class='2-3'></div>
+    </div>
+</pre>
