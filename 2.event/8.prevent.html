@@ -1,7 +1,7 @@
 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
 <script>
 $(() => {
-    $('a').click(e => {
+    $('a').click(e => { //event가 일어나는 작동을 막아버림
         e.preventDefault()
         $('body').append('<p>prevent default handler</p>')
     })
